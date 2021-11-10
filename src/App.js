@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {googleAPIKey} from './keys';
 
 function App() {
   const instructors = ['David', 'JJ', 'Megan'];
@@ -6,6 +7,7 @@ function App() {
   const [instructorObject, setInstructorObject] = useState({ name: 'David', awesomenessLevel: 75});
 
   useEffect(() => {
+    console.log(googleAPIKey);
   })
 
   function generateNewValues(){
