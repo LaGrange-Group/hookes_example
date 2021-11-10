@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from 'react';
 
-
 function App() {
   const instructors = ['David', 'JJ', 'Megan'];
 
   const [instructorObject, setInstructorObject] = useState({ name: 'David', awesomenessLevel: 75});
+
+  useEffect(() => {
+  })
 
   function generateNewValues(){
     let randomName = instructors[Math.floor(Math.random() * (0, instructors.length))];
